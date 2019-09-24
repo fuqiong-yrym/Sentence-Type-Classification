@@ -32,7 +32,7 @@ The [GloVe model](https://nlp.stanford.edu/data/) is used as the word embedding 
      python run_me.py
      ```  
 
-   This will ask you to input a sentence and the model will output the predicted type. 
+     This will ask you to input a sentence and the model will output the predicted type. 
 
 # Required library:
 Numpy, TensorFlow, Keras
