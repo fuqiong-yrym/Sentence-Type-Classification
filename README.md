@@ -4,9 +4,9 @@ When designing artificial intelligence based communication tools such as chatbot
 Intuitively, there are at least two basic properties that could be used to distinguish the types of sentences. One is the meaning of each word and the other is the order of the words in the sentence. The effective model that I can think of that could fully take account for these two properties is, LSTM with word embedding.
 
 While word embedding could account for the meaning of the word, the order of the words in the sentence almost determine its type.  For example, the followings are some basic and simple rules that differentiate the sentence types:
-     1. The imperative sentence starts with a verb;
-     2. The question sentence usually starts with Is, Can, Do, Where, When, What, How, Why;
-     3. The statements usually starts with a noun;
+   1. The imperative sentence starts with a verb;
+   2. The question sentence usually starts with Is, Can, Do, Where, When, What, How, Why;
+   3. The statements usually starts with a noun.
  
 LSTM is well known for its ability to selectively remember the useful features long time ago, which is the exactly desired attribute for sentence classification. Think about how the statement sentence composes itself: subject + verb + preposition + location/time. If LSTM could remember such a structure, it is able to predict that the sentence with such structure is a statement. As mentioned above, questions usually starts with question words such as how, what, when. When encountering them, the trained LSTM will tell itself: “ ok, I see the first word is a question word, this sentence is probably a question, I will remember this. But wait, I see a verb at a later position, ok, now it is a statement instead of a question. ” With the ability of memorizing features long time ago, LSTM is a promising model for sentence classification.
 
