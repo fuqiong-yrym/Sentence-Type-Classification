@@ -25,10 +25,8 @@ The [GloVe model](https://nlp.stanford.edu/data/) is used as the word embedding 
      
      This will train a LSTM based on the training dataset, output the training and testing accuracy, output the mislabelled examples and save the model as sentence_cls_model.h5
 
-2. Load the trained model 
-   The pertained model is already given as sentence_cls_model.h5
-
-3. Run the following to predict the type of a sentence:
+  
+ 2. Run the following to load the pretrained model and to predict the type of a sentence:
 
      ```bash
      python run_me.py
